@@ -1,0 +1,28 @@
+.App-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+}
+
+.App-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  width: 100vw;
+}
+
+@media (min-width: 750px){
+  .App-dashboard {
+    align-items: flex-start;
+    position: relative;
+
+    gap: 0;
+
+    width: 95vw;
+  }
+
+}

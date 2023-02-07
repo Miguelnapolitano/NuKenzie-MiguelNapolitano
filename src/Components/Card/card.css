@@ -1,0 +1,61 @@
+.entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+
+    width: 90%;
+    height: 80px;
+
+    position: relative;
+
+    padding: 0 1rem;
+
+    border-radius: 0.25rem;
+    background-color: var(--color-grey-2);
+
+}
+
+.exit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+
+    width: 90%;
+    height: 80px;
+
+    position: relative;
+
+    padding: 0 1rem;
+
+    border-radius: 0.25rem;
+    background-color: var(--color-grey-2);
+
+}
+
+.stripe-exit{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    border-radius: 0.25rem 0 0 0.25rem;
+
+    background-color: var(--color-grey-3);
+
+    width: 8px;
+    height: 100%;
+}
+
+.stripe-entry{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    border-radius: 0.25rem 0 0 0.25rem;
+
+    background-color: var(--color-secundary);
+
+    width: 8px;
+    height: 100%;
+}

@@ -1,0 +1,104 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+}
+
+.resume > h2 {
+    color: var(--color-grey-4);
+    font-size: var(--font-size-5);
+    font-weight: 700;
+    width: fit-content;
+}
+
+.resume-buttons{
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+}
+
+.resume-buttons > button {
+    width: 30%;
+    height: 2.5rem;
+
+    padding: 0;
+
+    color: var(--color-grey-4);
+    font-weight: 500;
+
+    background-color: var(--color-grey-2); 
+
+    cursor: pointer;
+}
+
+.resume-buttons > button:hover {
+    background-color: var(--color-grey-3); 
+}
+
+.resume-buttons > button:focus {
+    background-color: var(--color-primary-2); 
+    color: var(--color-grey-2);
+}
+
+ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    width: 90%;
+    height: fit-content;
+    padding: 1rem 0;
+
+}
+
+.noCard{
+    width: 100%;
+    height: 80px;
+}
+
+.noCard > img{
+    width: 100%;
+    height: 80px;
+}
+
+
+@media (min-width: 750px){
+    .resume {    
+        width: 45%;
+
+        position: absolute;
+        left: 425px;
+        top: 75px;
+    }
+
+    .resume-buttons{
+        display: flex;
+        width: 90%;
+    }
+
+    ul {
+        height: 250px;
+
+        padding: 0;
+
+        overflow-y: auto;
+
+    }
+}
+
+@media (min-width: 768px){
+
+    .resume {    
+        width: 500px;
+        
+        left: 700px;
+        top: 75px;
+    }
+}
